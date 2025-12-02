@@ -53,7 +53,7 @@ const Index = () => {
 
             return (
 
-                <div key={elem.id} className="card bg-gray-800 w-60 h-90 rounded text-center p-2 overflow-hidden text-ellipsis">
+                <div key={elem.id} className="card bg-gray-800 w-60 h-100 rounded text-center p-2 overflow-hidden text-ellipsis">
                     <Link
                         to={`/product/${elem.title}`}
                         onClick={() => setProduct(elem)}
@@ -61,7 +61,7 @@ const Index = () => {
 
                         <img className="rounded h-60 w-60 object-cover" src={src} alt={elem.title || 'product'} />
                         <h3 className="font-bold mt-2">{elem.title}</h3>
-                        <div className="text-sm pt-4 text-green-400">{displayPrice}</div>
+                        <div className="text-sm pt-2 pb-2 text-green-400">{displayPrice}</div>
                     </Link>
                 </div>
 
